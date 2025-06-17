@@ -1,0 +1,12 @@
+<template>
+    <lightning-card title="To-Do List">
+        <div class="slds-m-around_medium">
+            <ul>
+             <template for:each={list} for:item="ToDoList">
+                <li key={ToDoList.id}>
+                   {ToDoList.id}.{ToDoList.Task}-{ToDoList.Status}</li>
+             </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>
